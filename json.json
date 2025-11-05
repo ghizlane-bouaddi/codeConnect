@@ -1,0 +1,26 @@
+[
+    {
+        "nom": "Nouhaila",
+        "specialisation": "Développeuse Front-End",
+        "note": 4.8,
+        "photo": "https://via.placeholder.com/100"
+    },
+    {
+        "nom": "Ghizlane",
+        "specialisation": "Designer UI/UX",
+        "note": 4.5,
+        "photo": "https://via.placeholder.com/100"
+    },
+    {
+        "nom": "Mohammed",
+        "specialisation": "Développeur Back-End",
+        "note": 4.9,
+        "photo": "https://via.placeholder.com/100"
+    },
+    {
+        "nom": "Ghita",
+        "specialisation": "Chef de Projet",
+        "note": 4.7,
+        "photo": "https://intranet.youcode.ma/storage/users/profile/1913-1760996547.png"
+    }
+]
