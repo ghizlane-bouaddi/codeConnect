@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .hamburger {
+    display: none;
+}
+    .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #6e6767;
+}
+@media only screen and (max-width: 1000px) {
+.nav-menu {
+    position: fixed;
+    z-index: 50;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 95%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+}
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+}
+    </style>
+</head>
+
+<body class="relative m-0 p-0 box-border text-[Poppins] text-[#6e6767] ">
+
+    <!-- start header -->
+    <header class="w-full bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <div class="">
+                    <span class="text-gray-700 text-2xl ">code<span class="font-bold text-lime-600 text-2xl">Connect</span></span>
+                </div>
+                <nav class="navBar ">
+                    <ul class="md:flex items-center gap-6 transition-all nav-menu">
+                        <li class="nav-item"><a href="index.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Accueil</a>
+                        </li>
+                        <li class="nav-item"><a href="./pages/freelances.html" class="text-gray-700 hover:text-lime-600 hover:font-medium ">Freelances</a></li>
+                        <li class="nav-item"> <a href="./pages/missions.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Missions</a></li>
+                        <li class="nav-item"><a href="./pages/service.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Services</a></li>
+                        <li class="nav-item"><a href="./pages/avis.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Temoingnages</a></li>
+                        <li class="nav-item"><a href="./pages/contact.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Conatct</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class ="bar block w-10 h-1 mx-3 my-2 bg-[#101010] transition-all" ></span>
+                        <span class ="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]" ></span>
+                        <span class ="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]" ></span>
+                    </div>
+                </nav>
+            </div>
+            <div class="flex items-center gap-3">
+                <Button class="text-gray-700 hover:border-2 hover:border-lime-600  h-9 px-4 py-1 rounded-md gap-1.5 cursor-pointer">
+                    Log In
+                </Button>
+                <Button class="bg-lime-500 hover:bg-lime-600  text-white h-9 px-4 py-1 rounded-md gap-1.5 cursor-pointer">
+                    Sign Up
+                </Button>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <section class="mb-20">
+        <div id="missionsList" class=" w-full flex flex-wrap gap-5 mt-10 my-auto px-5">
+            <!-- <div
+                class="block max-w-[18rem] rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
+                <div class="p-6">
+                    <h5 class="mb-1 text-xl font-medium leading-tight ">
+                        titre
+                    </h5>
+                    <div class="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300 flex justify-between items-center">
+                        <span class="bg-red-400 rounded-lg p-1 text-white">dureEstimer</span>
+                        <span class="bg-red-400 rounded-lg p-1 text-white">type de contrat </span>
+                        <span class="bg-red-400 rounded-lg p-1 text-white">tarif</span>
+                        <span class="bg-red-400 rounded-lg p-1 text-white"></span>
+                    </div>
+                    <p class="mb-4 text-base leading-normal">
+                        Some quick example text to class="p-2 bg-blue-700 rounded-lg" build on the card title and make up the
+                        bulk of the card's content.
+                    </p>
+                    <ul class="flex justify-around items-center ">
+                        <li class="px-1 bg-blue-700 rounded-lg">comp1</li>
+                        <li class="px-1 bg-blue-700 rounded-lg">comp2</li>
+                        <li class="px-1 bg-blue-700 rounded-lg">comp3</li>
+                    </ul>
+                    <a type="button" href="#"
+                        class="pointer-events-auto me-5 inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400">
+                        Card Link
+                    </a>
+                    <a type="button" href="#"
+                        class="pointer-events-auto inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400">
+                        Another Link
+                    </a>
+                </div>
+            </div> -->
+
+        </div> 
+    </section>
+    <!-- start footer -->
+    <footer class="w-full bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white mb-4">Pour Clients</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Comment recruter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Marketplace des talents
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Catalogue de projets
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Solutions entreprise
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Recrutement personnalisé
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4">Pour les freelances</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Comment trouver des missions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Contrats directs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Offres de freelance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Conseils pour réussir
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4">Ressources</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Aide & support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Histoires de réussite
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Avis et témoignages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Blog & actualités
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4">Entreprise</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                À propos de nous
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Notre équipe
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Rejoignez-nous
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Impact et valeurs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Relations investisseurs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-400 text-sm">
+                    © 2025 codeConnect®
+                </div>
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="../assets/scripts/temoignages.js"></script>
+<script src="https://kit.fontawesome.com/a680a19743.js" crossorigin="anonymous"></script>
+<script src="../assets/scripts/main.js"></script>
+<script src="../assets/scripts/missions.js"></script>
+
+
+</body>
+
+</html>
