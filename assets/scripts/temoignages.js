@@ -8,8 +8,7 @@ async function LoadtemoignageData() {
 }
 LoadtemoignageData();
 function ajouterCardTemoignage(temoignages) {
-    temoignagesList.innerHTML = temoignages
-        .map((temoignage) => {
+    temoignagesList.innerHTML = temoignages.map((temoignage) => {
             // Générer les étoiles
             let etoiles = "";
             for (let i = 0; i < temoignage.review; i++) {
