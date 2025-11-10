@@ -1,0 +1,34 @@
+{
+"services": [
+{
+"id": 1,
+"freelance": "Amina El",
+"title": "Développement Web Fullstack",
+"category": "Développement web",
+"price": 1000,
+"currency": "MAD",
+"delivery_days": 14,
+"image": ""
+},
+{
+"id": 2,
+"freelance": "Youssef B.",
+"title": "UX/UI design pour mobile",
+"category": "UX Design",
+"price": 950,
+"currency": "MAD",
+"delivery_days": 10,
+"image": ""
+},
+{
+"id": 3,
+"freelance": "Sara M.",
+"title": "Campagne marketing digital",
+"category": "Marketing",
+"price": 1500,
+"currency": "MAD",
+"delivery_days": 21,
+"image": ""
+}
+]
+}
