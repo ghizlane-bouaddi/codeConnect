@@ -13,55 +13,59 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style>
         .hamburger {
-    display: none;
-}
-    .bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #6e6767;
-}
-@media only screen and (max-width: 1000px) {
-.nav-menu {
-    position: fixed;
-    z-index: 50;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 95%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0,0,0,0.05);
-}
-.nav-menu.active {
-    left: 0;
-}
+            display: none;
+        }
 
-.nav-item {
-    margin: 1.5rem 0;
-}
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #6e6767;
+        }
 
-.hamburger {
-    display: block;
-    cursor: pointer;
-}
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
+        @media only screen and (max-width: 1000px) {
+            .nav-menu {
+                position: fixed;
+                z-index: 50;
+                left: -100%;
+                top: 5rem;
+                flex-direction: column;
+                background-color: #fff;
+                width: 95%;
+                border-radius: 10px;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            }
 
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
+            .nav-menu.active {
+                left: 0;
+            }
 
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-}
+            .nav-item {
+                margin: 1.5rem 0;
+            }
+
+            .hamburger {
+                display: block;
+                cursor: pointer;
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        }
     </style>
 </head>
 
@@ -72,72 +76,71 @@
         <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
             <div class="flex items-center gap-8">
                 <div class="">
-                    <span class="text-gray-700 text-2xl ">code<span class="font-bold text-lime-600 text-2xl">Connect</span></span>
+                    <span class="text-gray-700 text-2xl ">code<span
+                            class="font-bold text-lime-600 text-2xl">Connect</span></span>
                 </div>
                 <nav class="navBar ">
                     <ul class="md:flex items-center gap-6 transition-all nav-menu">
-                        <li class="nav-item"><a href="index.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Accueil</a>
+                        <li class="nav-item"><a href="../index.html"
+                                class="text-gray-700 hover:text-lime-600 hover:font-medium">Accueil</a>
                         </li>
-                        <li class="nav-item"><a href="./pages/freelances.html" class="text-gray-700 hover:text-lime-600 hover:font-medium ">Freelances</a></li>
-                        <li class="nav-item"> <a href="./pages/missions.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Missions</a></li>
-                        <li class="nav-item"><a href="./pages/service.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Services</a></li>
-                        <li class="nav-item"><a href="./pages/avis.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Temoingnages</a></li>
-                        <li class="nav-item"><a href="./pages/contact.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Conatct</a></li>
+                        <li class="nav-item"><a href="./pages/freelances.html"
+                                class="text-gray-700 hover:text-lime-600 hover:font-medium ">Freelances</a></li>
+                        <li class="nav-item"> <a href="./missions.html"
+                                class="text-gray-700 hover:text-lime-600 hover:font-medium">Missions</a></li>
+                        <li class="nav-item"><a href="./pages/service.html"
+                                class="text-gray-700 hover:text-lime-600 hover:font-medium">Services</a></li>
+                        <li class="nav-item"><a href="./pages/avis.html"
+                                class="text-gray-700 hover:text-lime-600 hover:font-medium">Temoingnages</a></li>
+                        <li class="nav-item"><a href="./pages/contact.html"
+                                class="text-gray-700 hover:text-lime-600 hover:font-medium">Conatct</a></li>
                     </ul>
                     <div class="hamburger">
-                        <span class ="bar block w-10 h-1 mx-3 my-2 bg-[#101010] transition-all" ></span>
-                        <span class ="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]" ></span>
-                        <span class ="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]" ></span>
+                        <span class="bar block w-10 h-1 mx-3 my-2 bg-[#101010] transition-all"></span>
+                        <span class="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]"></span>
+                        <span class="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]"></span>
                     </div>
                 </nav>
             </div>
             <div class="flex items-center gap-3">
-                <Button class="text-gray-700 hover:border-2 hover:border-lime-600  h-9 px-4 py-1 rounded-md gap-1.5 cursor-pointer">
+                <Button
+                    class="text-gray-700 hover:border-2 hover:border-lime-600  h-9 px-4 py-1 rounded-md gap-1.5 cursor-pointer">
                     Log In
                 </Button>
-                <Button class="bg-lime-500 hover:bg-lime-600  text-white h-9 px-4 py-1 rounded-md gap-1.5 cursor-pointer">
+                <Button
+                    class="bg-lime-500 hover:bg-lime-600  text-white h-9 px-4 py-1 rounded-md gap-1.5 cursor-pointer">
                     Sign Up
                 </Button>
             </div>
         </div>
     </header>
     <!-- End header -->
-    <section class="mb-20">
-        <div id="missionsList" class=" w-full flex flex-wrap gap-5 mt-10 my-auto px-5">
-            <!-- <div
-                class="block max-w-[18rem] rounded-lg bg-white text-left text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white">
-                <div class="p-6">
-                    <h5 class="mb-1 text-xl font-medium leading-tight ">
-                        titre
-                    </h5>
-                    <div class="mb-2 text-base font-medium leading-tight text-surface/75 dark:text-neutral-300 flex justify-between items-center">
-                        <span class="bg-red-400 rounded-lg p-1 text-white">dureEstimer</span>
-                        <span class="bg-red-400 rounded-lg p-1 text-white">type de contrat </span>
-                        <span class="bg-red-400 rounded-lg p-1 text-white">tarif</span>
-                        <span class="bg-red-400 rounded-lg p-1 text-white"></span>
-                    </div>
-                    <p class="mb-4 text-base leading-normal">
-                        Some quick example text to class="p-2 bg-blue-700 rounded-lg" build on the card title and make up the
-                        bulk of the card's content.
-                    </p>
-                    <ul class="flex justify-around items-center ">
-                        <li class="px-1 bg-blue-700 rounded-lg">comp1</li>
-                        <li class="px-1 bg-blue-700 rounded-lg">comp2</li>
-                        <li class="px-1 bg-blue-700 rounded-lg">comp3</li>
-                    </ul>
-                    <a type="button" href="#"
-                        class="pointer-events-auto me-5 inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400">
-                        Card Link
-                    </a>
-                    <a type="button" href="#"
-                        class="pointer-events-auto inline-block cursor-pointer rounded text-base font-normal leading-normal text-primary transition duration-150 ease-in-out hover:text-primary-600 focus:text-primary-600 focus:outline-none focus:ring-0 active:text-primary-700 dark:text-primary-400">
-                        Another Link
-                    </a>
-                </div>
-            </div> -->
-
-        </div> 
+    <!-- start mission list -->
+    <section class="mb-20 relative">
+        <div class=" ml-10 mt-10 w-full max-w-sm min-w-[200px]">
+            <label class="block mb-1 text-xl ">
+                Filtrer Par Type de Contrat
+            </label>
+            <div class="relative">
+                <select
+                    class="w-full bg-transparent placeholder:text-md border border-2 rounded pl-3 pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-lime-600 shadow-sm focus:shadow-md appearance-none cursor-pointer" id="selectContrat">
+                    <option value="Tous">Tous</option>
+                    <option value="A_distance">A distance</option>
+                    <option value="Sur_Site">Sur Site</option>
+                    
+                </select>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2"
+                    stroke="currentColor" class="h-5 w-5 ml-1 absolute top-2.5 right-2.5 text-slate-700">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M8.25 15 12 18.75 15.75 15m-7.5-6L12 5.25 15.75 9" />
+                </svg>
+            </div>
+        </div>
+        <div id="missionsList" class=" w-full flex flex-wrap gap-5 mt-10 my-auto px-5 ">
+        </div>
     </section>
+    <!-- end mission list -->
+
     <!-- start footer -->
     <footer class="w-full bg-gray-900 text-white py-12">
         <div class="max-w-7xl mx-auto px-4">
@@ -266,10 +269,9 @@
         </div>
     </footer>
     <!-- end footer -->
-    <script src="../assets/scripts/temoignages.js"></script>
-<script src="https://kit.fontawesome.com/a680a19743.js" crossorigin="anonymous"></script>
-<script src="../assets/scripts/main.js"></script>
-<script src="../assets/scripts/missions.js"></script>
+    <script src="https://kit.fontawesome.com/a680a19743.js" crossorigin="anonymous"></script>
+    <script src="../assets/scripts/main.js"></script>
+    <script src="../assets/scripts/missions.js"></script>
 
 
 </body>
