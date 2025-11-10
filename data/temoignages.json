@@ -1,0 +1,50 @@
+    [
+        {
+            "id": 1,
+            "nom": "Alice Dupont",
+            "profession": "Designer UX",
+            "commentaire": "Une expérience incroyable, le service était rapide et efficace !",
+            "date": "2025-11-01",
+            "review" : "5"
+        },
+        {
+            "id": 2,
+            "nom": "Mohamed El Idrissi",
+            "profession": "Développeur Web",
+            "commentaire": "Très satisfait du support, mais l'interface pourrait être améliorée.",
+            "date": "2025-11-05",
+            "review" : "4"
+        },
+        {
+            "id": 3,
+            "nom": "Sofia Benali",
+            "profession": "Marketing Manager",
+            "commentaire": "Excellent service client et résultats au rendez-vous !",
+            "date": "2025-11-07",
+            "review" : "5"
+        },
+        {
+            "id": 4,
+            "nom": "Youssef Amrani",
+            "profession": "Entrepreneur",
+            "commentaire": "Le produit est bon mais le délai de livraison était un peu long.",
+            "date": "2025-11-08",
+            "review" : "3"
+        },
+        {
+            "id": 5,
+            "nom": "Karim Lahlou",
+            "profession": "Photographe",
+            "commentaire": "L'équipe est très professionnelle et à l'écoute de nos besoins.",
+            "date": "2025-11-09",
+            "review" : "5"
+        },
+        {
+            "id": 6,
+            "nom": "Nadia Cherkaoui",
+            "profession": "Consultante",
+            "commentaire": "Très bonne expérience, je recommande vivement !",
+            "date": "2025-11-09",
+            "review" : "5"
+        }
+    ]

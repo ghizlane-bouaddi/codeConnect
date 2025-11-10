@@ -96,7 +96,7 @@
                                 class="text-gray-700 hover:text-lime-600 hover:font-medium">Conatct</a></li>
                     </ul>
                     <div class="hamburger">
-                        <span class="bar block w-10 h-1 mx-3 my-2 bg-[#101010] transition-all"></span>
+                        <span class="bar block w-10 h-1 mx-3 my-2 bg-[#101010] "></span>
                         <span class="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]"></span>
                         <span class="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]"></span>
                     </div>
@@ -122,12 +122,11 @@
                 Filtrer Par Type de Contrat
             </label>
             <div class="relative">
-                <select
+                <select onchange="toggle(this)"
                     class="w-full bg-transparent placeholder:text-md border border-2 rounded pl-3 pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-lime-600 shadow-sm focus:shadow-md appearance-none cursor-pointer" id="selectContrat">
-                    <option value="Tous">Tous</option>
-                    <option value="A_distance">A distance</option>
-                    <option value="Sur_Site">Sur Site</option>
-                    
+                    <option id="contrat" value="Tous">Tous</option>
+                    <option id="contrat" value="A distance">A distance</option>
+                    <option id="contrat" value="Sur Site">Sur Site</option>
                 </select>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.2"
                     stroke="currentColor" class="h-5 w-5 ml-1 absolute top-2.5 right-2.5 text-slate-700">

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select onchange="toggle(this)"
+                    class="w-full bg-transparent placeholder:text-md border border-2 rounded pl-3 pr-8 py-2 transition duration-300 ease focus:outline-none focus:border-lime-600 shadow-sm focus:shadow-md appearance-none cursor-pointer" id="selectContrat">
+                    <option id="contrat" value="Tous">Tous</option>
+                    <option id="contrat" value="A distance">A distance</option>
+                    <option id="contrat" value="Sur Site">Sur Site</option>
+                    
+                </select>
+<div id="div_id">Some Data</div>
+<script>
+    // const selectContrat = document.getElementById("selectContrat");
+    // selectContrat.options[selectContrat.selectedIndex].value
+function toggle(el){
+    var value = el.options[el.selectedIndex].value;
+        div = document.getElementById('div_id');
+        console.log(value);
+
+    if (value === "A distance") {
+        div.style.display = 'none';
+    } else if (value === 'v_3') {
+        div.style.display = 'block';
+    }
+}
+</script>
+    
+</body>
+</html>

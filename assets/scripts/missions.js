@@ -1,42 +1,24 @@
 const missionsList = document.getElementById("missionsList");
+let missions = [];
+
 async function LoadMissionData() {
   const dataMissions = await fetch("../../data/missions.json");
-  let missions = await dataMissions.json();
-  // console.log(missions);
+  missions = await dataMissions.json();
+
+// console.log(missions)
+
+}
+
+// LoadMissionData();
+LoadMissionData().then(() => {
+  console.log("Les missions sont prêtes :", missions);
+  // initialiserFiltre();
   ajouterCardMission(missions);
-  let selectContrat = document.getElementById("selectContrat");
-console.log(selectContrat.options)
-for (let option of selectContrat.options) {
-  console.log(option.label);
-}
+  let missionFiltrees = filtrerMissions(missions, "À distance");
+  ajouterCardMission(missionFiltrees);
+  console.log(missionFiltrees);
 
-// when client clicked on select element 
-selectContrat.addEventListener("click", () => {
-// if default value is changed
-  selectContrat.addEventListener("change", () => {
-  // if value switched by client
-    switch (selectContrat.value) {
-      case "A_distance":
-      //do somthing with  , "add" value
-        // missionsList.innerHTML = selectContrat.value;
-        console.log(selectContrat.value);
-        let resu = filterParContrat(missions, selectContrat.value);
-        console.log(resu);
-        break;  // then take break
-      case "Sur_Site":
-      //do somthing with  , "remove" value
-        // result.innerHTML = selector.value;
-        console.log("false");
-        break; // then take break
-    }
-  });
 });
-
-  
-
-  return missions;
-}
-LoadMissionData();
 
 function ajouterCardMission(missions) {
   missionsList.innerHTML = missions
@@ -85,24 +67,47 @@ function ajouterCardMission(missions) {
     )
     .join("");
 }
+
+function filtrerMissions(missions, critere) {
+  if (!critere) return missions; 
+  return missions.filter(mission => mission.typeContrat === critere);
+}
+
 function filterParContrat(missions, text){
     let resoltes = missions.filter(function(mission){
     // console.log(missions);
     console.log(resoltes);
     return mission.typeContrat == text;
   });
-  
-}
-function filterParContrat(missions, text){
-    let resoltes = missions.filter(function(mission){
-    return mission.typeContrat == text;
-  });
-  
-  console.log(resoltes);
 }
 
+const filtrerContrat = function filterParContrat(missions, search){
+  search = search.toLowerCase();
+  return missions.filter(
+    (mission) => mission.includes(search)
+  )
+}
 
-const postulerForm = document.getElementById("postulerForm");
-// postulerForm.addEventListener("click", function postuler(id){
+let selectContrat = document.getElementById("selectContrat");
 
-// })
+// filterParContrat(missions, "A distance")
+function toggle(selectContrat){
+  var value = selectContrat.option[selectContrat.selectedIndex].value;
+}
+
+function toggle(el){
+    var value = el.options[el.selectedIndex].value;
+        console.log(value);
+        let missionFiltrees = filtrerMissions(missions, value);
+    // if (value === "A distance") {
+
+    //     // missionsList.style.display = "none";
+    //     console.log(missions);
+    // } else  if(value === "Sur Site"){
+    //     // missionsList.style.display = "block";
+    // }
+    // else{
+    //   // missionsList.style.display = "none";
+    // }
+}
+
