@@ -1,5 +1,6 @@
 const missionsList = document.getElementById("missionsList");
 let missions = [];
+let selectContrat = document.getElementById("selectContrat");
 
 async function LoadMissionData() {
   const dataMissions = await fetch("../../data/missions.json");
@@ -9,17 +10,12 @@ async function LoadMissionData() {
 
 }
 
-// LoadMissionData();
+// apres le chargement des donnees en executent ces fonctions 
 LoadMissionData().then(() => {
-  console.log("Les missions sont prêtes :", missions);
-  // initialiserFiltre();
   ajouterCardMission(missions);
-  let missionFiltrees = filtrerMissions(missions, "À distance");
-  ajouterCardMission(missionFiltrees);
-  console.log(missionFiltrees);
-
 });
 
+// fonction qui affiche une card de mission 
 function ajouterCardMission(missions) {
   missionsList.innerHTML = missions
     .map(
@@ -68,46 +64,18 @@ function ajouterCardMission(missions) {
     .join("");
 }
 
+// fonction qui filtre les mission par un type de contrat 
 function filtrerMissions(missions, critere) {
   if (!critere) return missions; 
   return missions.filter(mission => mission.typeContrat === critere);
 }
 
-function filterParContrat(missions, text){
-    let resoltes = missions.filter(function(mission){
-    // console.log(missions);
-    console.log(resoltes);
-    return mission.typeContrat == text;
-  });
-}
-
-const filtrerContrat = function filterParContrat(missions, search){
-  search = search.toLowerCase();
-  return missions.filter(
-    (mission) => mission.includes(search)
-  )
-}
-
-let selectContrat = document.getElementById("selectContrat");
-
-// filterParContrat(missions, "A distance")
-function toggle(selectContrat){
-  var value = selectContrat.option[selectContrat.selectedIndex].value;
-}
-
+// selectionner quel option est choisie et apres elle on ajoute les carde
 function toggle(el){
     var value = el.options[el.selectedIndex].value;
-        console.log(value);
+        // console.log(value);
         let missionFiltrees = filtrerMissions(missions, value);
-    // if (value === "A distance") {
-
-    //     // missionsList.style.display = "none";
-    //     console.log(missions);
-    // } else  if(value === "Sur Site"){
-    //     // missionsList.style.display = "block";
-    // }
-    // else{
-    //   // missionsList.style.display = "none";
-    // }
+        ajouterCardMission(missionFiltrees);
 }
+// selectContrat.addEventListener("change", toggle(this));
 
