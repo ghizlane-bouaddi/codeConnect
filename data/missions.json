@@ -1,0 +1,99 @@
+[
+    {
+        "id": 1,
+        "titre": "Création d'un site e-commerce",
+        "dureeEstime": "3 mois",
+        "typeContrat": "À distance",
+        "tarif": 2000,
+        "competance": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "React",
+            "Node.js",
+            "Stripe API"
+        ],
+        "description": "Développer un site e-commerce complet avec panier et paiement sécurisé.",
+        "client": "Jean Dupont"
+    },
+    {
+        "id": 2,
+        "titre": "Refonte d'une application mobile",
+        "dureeEstime": "4 mois",
+        "typeContrat": "Sur site",
+        "tarif": 3500,
+        "competance": [
+            "Figma",
+            "Tailwind CSS",
+            "UX/UI Design",
+            "Prototype",
+            "Design Mobile"
+        ],
+        "description": "Refonte complète d'une application mobile existante pour améliorer l'UX/UI.",
+        "client": "Marie Lambert"
+    },
+    {
+        "id": 3,
+        "titre": "Campagne de marketing digital",
+        "dureeEstime": "2 mois",
+        "typeContrat": "À distance",
+        "tarif": 1500,
+        "competance": [
+            "Google Ads",
+            "Facebook Ads",
+            "SEO",
+            "Social Media Marketing",
+            "Analytics"
+        ],
+        "description": "Créer et gérer des campagnes Google Ads et Facebook Ads pour un produit.",
+        "client": "Antoine Girard"
+    },
+    {
+        "id": 4,
+        "titre": "Développement d'une API RESTful",
+        "dureeEstime": "1 mois",
+        "typeContrat": "À distance",
+        "tarif": 1800,
+        "competance": [
+            "Python",
+            "Django REST Framework",
+            "PostgreSQL",
+            "JWT Auth",
+            "API Design"
+        ],
+        "description": "Créer une API pour une application mobile avec authentification et base de données.",
+        "client": "Paul Moreau"
+    },
+    {
+        "id": 5,
+        "titre": "Design d'une identité visuelle",
+        "dureeEstime": "1 mois",
+        "typeContrat": "Sur site",
+        "tarif": 1200,
+        "competance": [
+            "Illustrator",
+            "Photoshop",
+            "Branding",
+            "Logo Design",
+            "Color Theory"
+        ],
+        "description": "Création de logo, charte graphique et supports visuels pour une startup.",
+        "client": "Claire Petit"
+    },
+    {
+        "id": 6,
+        "titre": "Rédaction de contenu SEO",
+        "dureeEstime": "3 semaines",
+        "typeContrat": "À distance",
+        "tarif": 800,
+        "competance": [
+            "SEO",
+            "Rédaction Web",
+            "WordPress",
+            "Copywriting",
+            "Content Marketing"
+        ],
+        "description": "Rédiger 20 articles optimisés SEO pour un blog d'entreprise.",
+        "client": "Lucie Faure"
+    }
+]
