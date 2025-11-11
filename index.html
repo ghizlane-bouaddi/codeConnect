@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeConnect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .hamburger {
+    display: none;
+}
+    .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #6e6767;
+}
+@media only screen and (max-width: 1000px) {
+.nav-menu {
+    position: fixed;
+    z-index: 50;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 95%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+}
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 1.5rem 0;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+}
+    </style>
+</head>
+
+<body class="relative m-0 p-0 box-border font-[Poppins] text-[#6e6767] ">
+    <!-- start header -->
+    <header class="w-full bg-white border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-8">
+                <div class="">
+                    <span class="text-gray-700 text-2xl ">code<span class="font-bold text-lime-600 text-2xl">Connect</span></span>
+                </div>
+                <nav class="navBar ">
+                    <ul class="md:flex items-center gap-6 transition-all nav-menu">
+                        <li class="nav-item"><a href="index.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Accueil</a>
+                        </li>
+                        <li class="nav-item"><a href="./pages/freelances.html" class="text-gray-700 hover:text-lime-600 hover:font-medium ">Freelances</a></li>
+                        <li class="nav-item"> <a href="./pages/missions.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Missions</a></li>
+                        <li class="nav-item"><a href="./pages/service.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Services</a></li>
+                        <li class="nav-item"><a href="./pages/avis.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Temoingnages</a></li>
+                        <li class="nav-item"><a href="./pages/contact.html" class="text-gray-700 hover:text-lime-600 hover:font-medium">Conatct</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class ="bar block w-10 h-1 mx-3 my-2 bg-[#101010] transition-all" ></span>
+                        <span class ="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]" ></span>
+                        <span class ="bar  block w-10 h-1 mx-3 my-2 bg-[#101010]" ></span>
+                    </div>
+                </nav>
+            </div>
+            <div class="flex items-center gap-3">
+                <Button class="text-gray-700 hover:border-2 hover:border-lime-600  h-9 px-4 py-1 rounded-md gap-1.5 cursor-pointer">
+                    Log In
+                </Button>
+                <Button class="bg-lime-500 hover:bg-lime-600  text-white h-9 px-4 py-1 rounded-md gap-1.5 cursor-pointer">
+                    Sign Up
+                </Button>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <!-- start hero section -->
+    <section class="relative w-full bg-gray-900 overflow-hidden">
+        <div class="relative max-w-7xl mx-auto px-4 py-20 md:py-28">
+            <div class="max-w-2xl">
+                <h1 class="text-white text-5xl md:text-6xl mb-8">
+                    Là où les idées rencontrent les talents et deviennent succès
+                </h1>
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <div class="flex-1 ">
+                            <Input placeholder="chercher des services" class=" w-full h-12 bg-gray-200 text-gray-900 border-3 border-gray-500 focus:outline-none rounded-lg" />
+                        </div>
+                        <Button class="bg-green-600 hover:bg-green-700 text-white h-12 px-8 rounded-lg">
+                            Rechercher
+                        </Button>
+                    </div>
+                    <p class="py-3 text-xl">Chercher sur un Service</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end hero section -->
+    <!-- start domaine section-->
+    <section class="w-full bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-center text-6xl mb-12">Explore millions of pros</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div
+                    class="flex flex-col items-center justify-center p-6 border border-gray-200 rounded-lg hover:border-green-600 hover:shadow-md transition-all cursor-pointer">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-code text-lime-500 text-2xl"></i>
+                    </div>
+                    <p class="text-center text-sm text-gray-900">Development & IT</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center p-6 border border-gray-200 rounded-lg hover:border-green-600 hover:shadow-md transition-all cursor-pointer">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-pen text-lime-500 text-2xl"></i>
+                    </div>
+                    <p class="text-center text-sm text-gray-900">Design & Creative</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center p-6 border border-gray-200 rounded-lg hover:border-green-600 hover:shadow-md transition-all cursor-pointer">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-bullhorn text-lime-500 text-2xl"></i>
+                    </div>
+                    <p class="text-center text-sm text-gray-900">Sales & Marketing</p>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center p-6 border border-gray-200 rounded-lg hover:border-green-600 hover:shadow-md transition-all cursor-pointer">
+                    <div class="mb-3">
+                        <i class="fa-solid fa-video text-lime-500 text-2xl"></i>
+                    </div>
+                    <p class="text-center text-sm text-gray-900">Video & Animation</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- end domaines section -->
+    <!-- start how to work  -->
+    <section class="w-full bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 ">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-start text-4xl mb-12">Comment ça marche</h2>
+                <div class="flex gap-2">
+                    <button id="forClient" class="cursor-pointer  mb-12 mr-5">Pour Clients</button>
+                </div>
+            </div>
+            <div id="client" class="grid  md:grid-cols-3 gap-6 mb-30">
+                <div  class="overflow-hidden bg-white border-0 rounded-lg  shadow-lg">
+                    <div class=" w-full overflow-hidden">
+                        <img src="/assets/images/image1howToWork.png" alt="image" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2">Découvrez les freelances</h3>
+                        <p class="text-gray-600">Parcourez les profils, comparez les tarifs et les compétences.</p>
+                    </div>
+                </div>
+                <div  class="overflow-hidden bg-white border-0 rounded-lg  shadow-lg">
+                    <div class=" w-full overflow-hidden">
+                        <img src="/assets/images/imagePublierMission.png
+                    " alt="image" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2">Publiez votre mission</h3>
+                        <p class="text-gray-600">Décrivez vos besoins, votre budget et vos attentes.</p>
+                    </div>
+                </div>
+                <div  class="overflow-hidden bg-white border-0 rounded-lg  shadow-lg">
+                    <div class=" w-full overflow-hidden">
+                        <img src="/assets/images/imageContacter.png" alt="image" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2">Contactez et échangez</h3>
+                        <p class="text-gray-600">Discutez directement avec les freelances pour choisir le bon profil.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-start text-4xl mb-12 ">Comment ça marche</h2>
+                <div class="flex gap-2 justify-self-end ">
+                    <button   id="forFreelances" class="cursor-pointer  mb-12 ">Pour Freelances</button>
+                </div>
+            </div>
+            <!-- pour freelanccer -->
+            <div  id="freelances" class="grid md:grid-cols-3 gap-6" >
+                <div  class="overflow-hidden bg-white border-0 rounded-lg  shadow-lg">
+                    <div class=" w-full overflow-hidden">
+                        <img src="/assets/images/pimageCreerProfile.png" alt="image" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2">Créez votre profil</h3>
+                        <p class="text-gray-600">Présentez vos compétences, votre portfolio et vos tarifs.</p>
+                    </div>
+                </div>
+                <div  class="overflow-hidden bg-white border-0 rounded-lg  shadow-lg">
+                    <div class=" w-full overflow-hidden">
+                        <img src="/assets/images/imageExplorer.png" alt="image" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2">Explorez les missions</h3>
+                        <p class="text-gray-600">Parcourez les offres publiées par les clients selon vos spécialités.</p>
+                    </div>
+                </div>
+                <div  class="overflow-hidden bg-white border-0 rounded-lg  shadow-lg">
+                    <div class=" w-full overflow-hidden">
+                        <img src="/assets/images/imagePostuler.png" alt="image" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-6">
+                        <h3 class="mb-2">Postulez facilement</h3>
+                        <p class="text-gray-600">Envoyez votre candidature et un message personnalisé au client.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end how to work  -->
+    <!-- start temoignages -->
+    <section class="w-full bg-gray-50 py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-center text-6xl mb-12"> Temoingnages des client sur notre site</h2>
+        <!-- card temoignage -->
+            <div class="grid md:grid-cols-3 gap-6" id="temoignagesList">
+                <div  class="p-6 bg-white border-0 shadow-sm">
+                    <div class="flex gap-1 mb-4 fill-yellow-400 text-yellow-400" id="startList">
+                        <!-- <div key={i} class="h-5 w-5 fill-yellow-400 text-yellow-400 flex gap-1"> -->
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        <!-- </div> -->
+                    </div>
+                    <p class="text-gray-700 mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt ducimus atque magni? Consectetur maiores provident totam error rem. Esse, fugit?</p>
+                    <div class="border-t pt-4">
+                        <p class="text-gray-900">nohaila ait hammad</p>
+                        <p class="text-sm text-gray-500">date</p>
+                    </div>
+                </div>
+            </div>
+        <!-- card temoignage -->
+        </div>
+    </section>
+    <!-- end temoignages -->
+    <!-- start get started -->
+    <section class="w-full bg-gradient-to-r from-green-500 to-green-600 py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-white text-4xl mb-6">
+                Des missions rapides aux grandes ambitions <br> Trouvez votre prochain talent.
+            </h2>
+            <Button  class="bg-white font-medium text-lime-600 hover:bg-lime-600 hover:text-white rounded-lg px-8 py-6 text-xl">
+                Get started now
+            </Button>
+        </div>
+    </section>
+    <!-- end get started -->
+    <!-- start footer -->
+    <footer class="w-full bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white mb-4">Pour Clients</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Comment recruter
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Marketplace des talents
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Catalogue de projets
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Solutions entreprise
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Recrutement personnalisé
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4">Pour les freelances</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Comment trouver des missions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Contrats directs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Offres de freelance
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Conseils pour réussir
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4">Ressources</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Aide & support
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Histoires de réussite
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Avis et témoignages
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Blog & actualités
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white mb-4">Entreprise</h4>
+                    <ul class="space-y-2">
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                À propos de nous
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Notre équipe
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Rejoignez-nous
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Impact et valeurs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-400 hover:text-white text-sm">
+                                Relations investisseurs
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-gray-400 text-sm">
+                    © 2025 codeConnect®
+                </div>
+                <div class="flex gap-6 text-sm text-gray-400">
+                    <a href="#" class="hover:text-white">Terms of Service</a>
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="./assets/scripts/temoignages.js"></script>
+<script src="https://kit.fontawesome.com/a680a19743.js" crossorigin="anonymous"></script>
+<script src="./assets/scripts/main.js"></script>
+</body>
+
+</html>
