@@ -1,43 +1,21 @@
 const missionsList = document.getElementById("missionsList");
+let missions = [];
+let selectContrat = document.getElementById("selectContrat");
+
 async function LoadMissionData() {
   const dataMissions = await fetch("../../data/missions.json");
-  let missions = await dataMissions.json();
-  // console.log(missions);
-  ajouterCardMission(missions);
-  let selectContrat = document.getElementById("selectContrat");
-console.log(selectContrat.options)
-for (let option of selectContrat.options) {
-  console.log(option.label);
+  missions = await dataMissions.json();
+
+// console.log(missions)
+
 }
 
-// when client clicked on select element 
-selectContrat.addEventListener("click", () => {
-// if default value is changed
-  selectContrat.addEventListener("change", () => {
-  // if value switched by client
-    switch (selectContrat.value) {
-      case "A_distance":
-      //do somthing with  , "add" value
-        // missionsList.innerHTML = selectContrat.value;
-        console.log(selectContrat.value);
-        let resu = filterParContrat(missions, selectContrat.value);
-        console.log(resu);
-        break;  // then take break
-      case "Sur_Site":
-      //do somthing with  , "remove" value
-        // result.innerHTML = selector.value;
-        console.log("false");
-        break; // then take break
-    }
-  });
+// apres le chargement des donnees en executent ces fonctions 
+LoadMissionData().then(() => {
+  ajouterCardMission(missions);
 });
 
-  
-
-  return missions;
-}
-LoadMissionData();
-
+// fonction qui affiche une card de mission 
 function ajouterCardMission(missions) {
   missionsList.innerHTML = missions
     .map(
@@ -85,24 +63,19 @@ function ajouterCardMission(missions) {
     )
     .join("");
 }
-function filterParContrat(missions, text){
-    let resoltes = missions.filter(function(mission){
-    // console.log(missions);
-    console.log(resoltes);
-    return mission.typeContrat == text;
-  });
-  
-}
-function filterParContrat(missions, text){
-    let resoltes = missions.filter(function(mission){
-    return mission.typeContrat == text;
-  });
-  
-  console.log(resoltes);
+
+// fonction qui filtre les mission par un type de contrat 
+function filtrerMissions(missions, critere) {
+  if (!critere) return missions; 
+  return missions.filter(mission => mission.typeContrat === critere);
 }
 
+// selectionner quel option est choisie et apres elle on ajoute les carde
+function toggle(el){
+    var value = el.options[el.selectedIndex].value;
+        // console.log(value);
+        let missionFiltrees = filtrerMissions(missions, value);
+        ajouterCardMission(missionFiltrees);
+}
+// selectContrat.addEventListener("change", toggle(this));
 
-const postulerForm = document.getElementById("postulerForm");
-// postulerForm.addEventListener("click", function postuler(id){
-
-// })
