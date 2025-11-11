@@ -1,0 +1,178 @@
+
+[
+  {
+    "id": 1,
+    "name": "Ghizlane Bouaddi",
+    "speciality": "Développeuse Web",
+    "rating": 4.8,
+     "profileImage": "https://th.bing.com/th/id/R.846dbc949d80451007b0aee19e2e3df4?rik=5OIl9Esb%2bZmCeA&pid=ImgRaw&r=0",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1342-1760996171.png",
+    "bio": "Passionnée par le code et la création d’expériences web modernes.",
+   "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 45
+  },
+  {
+    "id": 2,
+    "name": "Ghita Makhfi",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://img.freepik.com/photos-premium/vue-imprenable-ciel-riviere_954226-162657.jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1913-1760996547.png",
+    "bio": "Designer expérimenté dans la création d interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40,
+    "comment" : "tres bon travail"
+  },
+
+   {
+    "id": 3,
+    "name": "Mohamed Boussouir",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://www.tactill.com/uploads/banques-images-gratuites.jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1884-1760996517.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+
+   {
+    "id": 4,
+    "name": "Nohaila Ait Hammad",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://fr.vidnoz.com/img/image-to-video/poster-1.png",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1618-1760996287.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+
+   {
+    "id": 5,
+    "name": "Allam Zakaria",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://cdn.pixabay.com/photo/2016/05/16/21/07/football-1396740_1280.jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1244-1760996162.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+
+   {
+    "id": 6,
+    "name": "Ammar Kasim",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://cdn.pixabay.com/photo/2016/05/20/21/57/football-1406106_1280.jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1511-1760996180.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+  {
+    "id": 7,
+    "name": "Aymane El-hassouni",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://cdn.pixabay.com/photo/2021/02/23/12/57/football-6043402_960_720.jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1536-1760996213.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+  {
+    "id": 8,
+    "name": "Aymen Oumaalla",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://images.pexels.com/photos/687811/pexels-photo-687811.jpeg?cs=srgb&dl=pexels-citronovalimonada-687811.jpg&fm=jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1942-1760996565.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+  {
+    "id": 9,
+    "name": "Chouaib Loubbati",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://cdn.pixabay.com/photo/2021/02/25/06/26/game-6048243_1280.jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1523-1760996189.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+  {
+    "id": 10,
+    "name": "Hamza El Kabraoui",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://wallpapers.com/images/hd/games-pictures-vht5onscabr3pem7.jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1547-1760996245.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+  {
+    "id": 11,
+    "name": "Mohamed El Gholb",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://cdn.pixabay.com/photo/2024/02/02/14/54/ai-generated-8548372_640.jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1793-1760996475.png",
+    "bio": "Designer expérimenté dans la création d’interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  },
+ {
+    "id": 12,
+    "name": "Mohamed Aymane Jaafouri",
+    "speciality": "Designer UI/UX",
+    "rating": 4.6,
+     "profileImage": "https://images.pexels.com/photos/1111597/pexels-photo-1111597.jpeg?cs=srgb&dl=pexels-lilartsy-1111597.jpg&fm=jpg",
+    "image": "https://intranet.youcode.ma/storage/users/profile/thumbnail/1907-1760996541.png",
+    "bio": "Designer expérimenté dans la création d interfaces élégantes et ergonomiques.",
+    "progect1" : "pexels-karola-g-5904090.jpg",
+    "progect2" : "pexels-karola-g-5904090.jpg",
+    "progect3" : "pexels-karola-g-5904090.jpg",
+    "skills": ["Figma", "Adobe XD", "Prototypage", "UI Design"],
+    "rate": 40
+  }
+]
+
+
