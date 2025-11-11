@@ -30,9 +30,47 @@ async function loadServices() {
     }
 
      document.getElementById("service-add").addEventListener("click", () => {
-      servicesContainer.innerHTML = "";
+      servicesContainer.innerHTML = '<div id="formeAddService"><h2>Ajouter un service</h2><form id="serviceForm"><label>Freelance: </label><input type="text" placeholder="Nom du freelance" required><label>Title: </label><input type="text" placeholder="Titre du service" required><label>Catégorie: </label><select name="categorie" id="category"><option value="defaut" placeholder="Catégorie" required><option value="devWebFullStack">Développement Web Fullstack</option><option value="UI/UX">UX/UI design pour mobile</option><option value="marketing">Campagne marketing digital</option></select><label>Prix: </label><input type="number" placeholder="Prix (MAD)" required><label>Jours de livraison: </label><input type="number" placeholder="Délai (jours)" required><button id="enregistrer">Enregistrer</button></form></div>';
       sorted.forEach(service => servicesContainer.appendChild(createServiceCard(service)));
     });
+
+  
+
+//     // Sélection du formulaire
+// const form = document.getElementById("serviceForm");
+
+// // Écoute la soumission du formulaire
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault(); // Empêche le rechargement de la page
+
+//   // Création d’un nouvel objet service
+//   const nouveauService = {
+//     id: servicesData.length + 1,
+//     freelance: document.getElementById("freelance").value,
+//     title: document.getElementById("title").value,
+//     category: document.getElementById("category").value,
+//     price: Number(document.getElementById("price").value),
+//     currency: "MAD",
+//     delivery_days: Number(document.getElementById("delivery_days").value)
+//   };
+
+//   // Ajout dans le tableau en mémoire
+//   servicesData.push(nouveauService);
+
+//   // Affichage instantané dans la page
+//   servicesContainer.appendChild(createServiceCard(nouveauService));
+
+//   // Réinitialiser le formulaire
+//   form.reset();
+// });
+
+
+
+
+    // document.getElementById("enregistrer").addEventListener("click", () => {
+    // const ajoutService = services.push()
+    // servicesContainer.innerHTML = "";
+    // });
 
     document.getElementById("sortCroissant").addEventListener("click", () => {
       const sorted = [...servicesData].sort((a, b) => a.price - b.price);
