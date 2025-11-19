@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Freelances</title>
 </head>
+
 <body>
     <h1>Nos Services Freelances</h1>
     <div style="text-align:center;">
@@ -13,6 +15,27 @@
         <button id="sortDecroissant">Trier par prix décroissant</button>
     </div>
     <div id="servicesContainer"></div>
+    <div id="formeAddService">
+        <h2>Ajouter un service</h2>
+        <form id="serviceForm">
+            <label>Freelance: </label>
+            <input id="freelance" type="text" placeholder="Nom du freelance" required>
+            <label>Title: </label>
+            <input id="title" type="text" placeholder="Titre du service" required>
+            <label>Catégorie: </label>
+            <select name="categorie" id="category">
+                <option value="defaut" placeholder="Catégorie" required>
+                <option value="devWebFullStack">Développement Web Fullstack</option>
+                <option value="UI/UX">UX/UI design pour mobile</option>
+                <option value="marketing">Campagne marketing digital</option>
+            </select>
+            <label>Prix: </label>
+            <input id="price" type="number" placeholder="Prix (MAD)" required>
+            <label>Jours de livraison: </label>
+            <input id="delivery_days" type="number" placeholder="Délai (jours)" required>
+            <button id="enregistrer">Enregistrer</button>
+        </form>
+    </div>
     <script src="../assets/scripts/services.js"></script>
 </body>
 

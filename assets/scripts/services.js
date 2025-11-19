@@ -2,7 +2,6 @@ async function loadServices() {
       try {
         const response = await fetch("../data/services.json"); 
         const data = await response.json();           
-
         servicesData = data.services;
         servicesContainer.innerHTML = "";
         servicesData.forEach(service => {
@@ -28,11 +27,13 @@ async function loadServices() {
 
       return card;
     }
+    document.getElementById("formeAddService").style.display = "none";
+    document.getElementById("service-add").addEventListener("click", () => {
+    document.getElementById("formeAddService").style.display = "block";
+    card.style.display = "none";
+  });
 
-     document.getElementById("service-add").addEventListener("click", () => {
-      servicesContainer.innerHTML = '<div id="formeAddService"><h2>Ajouter un service</h2><form id="serviceForm"><label>Freelance: </label><input type="text" placeholder="Nom du freelance" required><label>Title: </label><input type="text" placeholder="Titre du service" required><label>Catégorie: </label><select name="categorie" id="category"><option value="defaut" placeholder="Catégorie" required><option value="devWebFullStack">Développement Web Fullstack</option><option value="UI/UX">UX/UI design pour mobile</option><option value="marketing">Campagne marketing digital</option></select><label>Prix: </label><input type="number" placeholder="Prix (MAD)" required><label>Jours de livraison: </label><input type="number" placeholder="Délai (jours)" required><button id="enregistrer">Enregistrer</button></form></div>';
-      sorted.forEach(service => servicesContainer.appendChild(createServiceCard(service)));
-    });
+      
 
   
 
@@ -54,8 +55,22 @@ async function loadServices() {
 //     delivery_days: Number(document.getElementById("delivery_days").value)
 //   };
 
-//   // Ajout dans le tableau en mémoire
-//   servicesData.push(nouveauService);
+const storage = [];
+
+function ajouterservice(service){
+  service.preventDefault();
+  const servicess = {
+  freelance: document.getElementById('freelance').value,
+  title: document.getElementById('title').value,
+  category: document.getElementById('category').value,
+  price: Number(document.getElementById('price').value),
+  delivery_days: Number(document.getElementById('delivery_days').value)
+  };
+  storage.push(servicess);
+  localStorage.setItem('services', JSON.stringify(storage));
+  createServiceCard(servicess);
+}
+document.getElementById('enregistrer').addEventListener('submit', ajouterservice);
 
 //   // Affichage instantané dans la page
 //   servicesContainer.appendChild(createServiceCard(nouveauService));
